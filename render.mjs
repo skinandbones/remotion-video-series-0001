@@ -52,5 +52,3 @@ await renderMedia({
 console.log(`Rendering composition ${composition.id}...`);
 
 RenderInternals.perf.logPerf();
-
-// Process.exit();
