@@ -20,7 +20,7 @@ const bundled =
 		webpackOverride: (config) => config,
 	}));
 
-const compositionId = process.env.COMPOSITION || 'VideoSeries';
+const compositionId = process.env.COMPOSITION || 'GradientVideo';
 const concurrency = parseInt(process.env.CONCURRENCY || '1', 10);
 
 const compositions = await getCompositions(bundled);

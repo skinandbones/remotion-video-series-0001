@@ -1,6 +1,6 @@
 import {Composition} from 'remotion';
-import {MyComposition} from './Composition';
-import GradientBackground from './GradientBackground';
+import {GradientVideo} from './GradientVideo';
+import {GradientBackground} from './GradientBackground';
 import {LottieBackground} from './LottieBackground';
 import {LottieVideo} from './LottieVideo';
 import './style.css';
@@ -18,7 +18,7 @@ export const RemotionRoot: React.FC = () => {
 			/>
 			<Composition
 				id="GradientVideo"
-				component={MyComposition}
+				component={GradientVideo}
 				durationInFrames={60 * 30}
 				fps={30}
 				width={1920}
