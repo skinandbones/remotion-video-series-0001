@@ -23,5 +23,14 @@ run_local: build_local
     -e COMPOSITION={{env_var_or_default('COMPOSITION', 'VideoSeries') }} \
     {{ image_name }}:arm64
 
-run_videoseries:
-  @COMPOSITION=VideoSeries just run_local
+run_gradientvideo:
+  @COMPOSITION=GradientVideo just run_local
+
+run_lottievideo:
+  @COMPOSITION=LottieVideo just run_local
+
+run_gradientbg:
+  @COMPOSITION=GradientBackground just run_local
+
+run_lottiebg:
+  @COMPOSITION=LottieVideo just run_local
