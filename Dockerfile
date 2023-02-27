@@ -16,6 +16,7 @@ RUN chown -R remotion:remotion /node_modules /out
 # Copy everything from your project to the docker image. Adjust if needed.
 COPY package.json package*.json yarn.lock* pnpm-lock.yaml* tsconfig.json* remotion.config.* ./
 COPY src ./src
+COPY public ./public
 
 # Install the right package manager and dependencies - see below for Yarn/PNPM
 RUN corepack enable
